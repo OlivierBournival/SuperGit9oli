@@ -37,18 +37,18 @@ namespace SuperProjet.Data.Migrations
                     table.PrimaryKey("PK_Problems", x => x.Id);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "Trucs",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Trucs", x => x.Id);
-                });
+            //migrationBuilder.CreateTable(
+            //    name: "Trucs",
+            //    columns: table => new
+            //    {
+            //        Id = table.Column<int>(type: "int", nullable: false)
+            //            .Annotation("SqlServer:Identity", "1, 1"),
+            //        Description = table.Column<string>(type: "nvarchar(max)", nullable: false)
+            //    },
+            //    constraints: table =>
+            //    {
+            //        table.PrimaryKey("PK_Trucs", x => x.Id);
+            //    });
         }
 
         /// <inheritdoc />
